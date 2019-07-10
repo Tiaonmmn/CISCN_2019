@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="row">
+    <form action="/register" method="post" class="col-lg-6 col-lg-offset-3">
+        {% raw xsrf_form_html() %}
+        <div class="form-group">
+            <label>用户名：</label>
+            <input type="text" class="form-control" name="username" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label>邮箱：</label>
+            <input type="email" class="form-control" name="mail" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label>密码：</label>
+            <input type="password" class="form-control" name="password" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label>确认密码：</label>
+            <input type="password" class="form-control" name="password_confirm" placeholder="" required>
+        </div>
+
+        <button class="btn btn-primary pull-right" type="submit">注册</button>
+    </form>
+</div>
+<br/>
+{% end %}

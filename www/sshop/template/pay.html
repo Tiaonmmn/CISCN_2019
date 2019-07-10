@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+{% try %}
+{% if flag%}
+    <div class="alert alert-warning alert-dismissable">
+        Only one shot! Next step is /admin448bfdcd-c968-4d05-b9aa-7563a9e9cd19/
+    </div>
+{% end %}
+{%except%}
+{%end%}
+<div class="jumbotron">
+    <h1>结账</h1>
+</div>
+{% end %}

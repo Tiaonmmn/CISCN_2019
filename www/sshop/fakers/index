@@ -1,0 +1,179 @@
+<html><!-- Mirrored from developer.xamarin.com/api/member/System.Collections.ArrayList.TrimToSize/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Sep 2016 06:40:49 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1140">
+    <link rel="shortcut icon" href="../../../../xamarin.com/faviconc81e.ico?2">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script async="" src="../../../../www.googletagmanager.com/gtm5445.js?id=GTM-57C4Z7"></script><script type="text/javascript" src="../../../theme/assets/js/structure/template.js"></script>
+
+    <meta name="google-site-verification" content="ujkHvVrw2twK1FN5Tch44Zeh_jqeLSX4QSv6y1myzCU">
+    <title>TrimToSize</title>
+
+    <link rel="stylesheet" href="../../../theme/assets/css/structure/template.css" type="text/css">
+    <link rel="stylesheet" href="../../../theme/assets/css/structure/grid.css" type="text/css">
+    <link rel="stylesheet" href="../../../theme/assets/css/structure/typography.css" type="text/css">
+
+    <link rel="stylesheet" href="../../../theme/assets/css/developer-center6da2.css?v=2.2" type="text/css">
+    <link rel="stylesheet" href="../../../theme/assets/js/libraries/swipebox/swipebox.css">
+
+    
+
+<link rel="stylesheet" type="text/css" href="../../../theme/assets/css/pages/developers/api.css">
+
+
+
+    
+  </head>
+  <body>
+
+    <!-- Google Tag Manager -->
+    <noscript>&lt;iframe src="http://www.googletagmanager.com/ns.html?id=GTM-57C4Z7"
+    height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../../../../www.googletagmanager.com/gtm5445.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-57C4Z7');</script>
+    <!-- Qualaroo for xamarin.com -->
+    <!-- Paste this code right after the <body> tag on every page of your site. -->
+
+    
+
+
+    
+
+    
+
+    
+
+
+
+<div id="sidebar-tooltip"></div>
+
+<section class="content-with-sidebar">
+    <div class="wrapper">
+
+        <main class="deep">
+            <div class="doc-content">
+                <div style="float:right" class="">
+
+                    
+                </div>
+
+                <ul class="breadcrumb"><li class="namespace"><a href="../../namespace/System.Collections/index.html">System.Collections</a></li><li class="pubclass"><a href="../../type/System.Collections.ArrayList/index.html" class="cref">ArrayList</a></li><li class="pubproperty">TrimToSize</li></ul><h1 class="named-header">System.Collections.ArrayList.TrimToSize Method</h1><div class="Content"><div class="msummary"><p>Sets the capacity to the actual number of elements in the <a href="../../type/System.Collections.ArrayList/index.html" class="cref">ArrayList</a>.</p></div><h2>Syntax</h2><div class="Signature">public virtual <a href="../../type/System.Void/index.html" class="cref">Void</a> <b>TrimToSize</b> ()</div><div class="MemberBox"><h4 class="Subsection">Exceptions</h4><blockquote class="SubsectionBox" id="T::Exceptions"><table class="TypeDocumentation"><tbody><tr><th>Type</th><th>Reason</th></tr><tr valign="top"><td><a href="../../type/System.NotSupportedException/index.html" class="cref">NotSupportedException</a></td><td>The current instance is read-only or has a fixed size.</td></tr></tbody></table></blockquote><h2 class="Section">Remarks</h2><div class="SectionBox" id="T::Remarks"><p>This method can be used to minimize a collection's memory overhead if no new elements will be added to the collection.</p><p>To reset a <a href="../../type/System.Collections.ArrayList/index.html" class="cref">ArrayList</a> to its initial state, call the <a href="../System.Collections.ArrayList.Clear/index.html" class="cref">ArrayList.Clear</a> method before calling <a href="index.html" class="cref">ArrayList.TrimToSize</a>. Trimming an empty <a href="../../type/System.Collections.ArrayList/index.html" class="cref">ArrayList</a> sets the capacity of the <a href="../../type/System.Collections.ArrayList/index.html" class="cref">ArrayList</a> to the default capacity.</p><p>This method is an O(<i>n</i>) operation, where <i>n</i> is <a href="../../property/System.Collections.ArrayList.Count/index.html" class="cref">ArrayList.Count</a>.</p></div><h2 class="Section">Requirements</h2><div class="SectionBox" id="T::Version Information"><b>Namespace: </b>System.Collections<br><b>Assembly: </b>mscorlib (in mscorlib.dll)<br><b>Assembly Versions: </b>1.0.5000.0, 2.0.0.0, 4.0.0.0</div></div></div><div class="Footer"></div>
+            </div>
+        </main>
+
+        
+
+
+
+    </div>
+</section>
+
+
+
+    
+
+
+    <!-- jQuery -->
+
+    <script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../../theme/assets/js/libraries/jquery-1.11.2.min.js"><\/script>')</script><script src="../../../theme/assets/js/libraries/jquery-1.11.2.min.js"></script>
+    <script>var jq190 = jQuery;</script>
+    <!--<script type="text/javascript" src="/theme/assets/js/libraries/jquery-migrate-1.2.1.min.js"></script>-->
+
+    <script type="text/javascript" src="../../../theme/assets/js/libraries/fastclick.js"></script>
+    <script type="text/javascript" src="../../../theme/assets/js/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../theme/assets/js/libraries/hisrc.js"></script>
+
+    <script type="text/javascript" src="../../../theme/assets/js/libraries/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="../../../theme/assets/js/libraries/swipebox/jquery.swipebox.min.js"></script>
+    <script type="text/javascript"> $(function() { $('.fancybox').swipebox(); }); </script>
+    <script type="text/javascript" src="../../../theme/assets/js/libraries/moment.min.js"></script>
+    <script type="text/javascript" src="../../../theme/assets/js/developer-center6da2.js?v=2.2"></script>
+    <script type="text/javascript" src="../../../theme/assets/js/partials/developers/search.js"></script>
+
+    <style type="text/css"> comment { display: none !important; } </style>
+
+    <script type="text/javascript" src="../../../theme/assets/js/structure/mobile.js"></script>
+
+        <script type="text/javascript">
+        jQuery(function ($) {
+            $.syntax({ blockLayout: "plain" });
+        });
+    </script>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23759232-5']);
+  _gaq.push(['_setDomainName', 'xamarin.com']);
+  _gaq.push(['_addIgnoredRef', 'xamarin.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+  (function() {
+    function initMunchkin() {
+      Munchkin.init('975-JOX-769');
+      // custom handling after marketo is ready
+      if (typeof marketo_ready != 'undefined') marketo_ready();
+    }
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = document.location.protocol + '//munchkin.marketo.net/munchkin.js';
+    s.onreadystatechange = function() {
+      if (this.readyState == 'complete' || this.readyState == 'loaded') {
+        initMunchkin();
+      }
+    };
+    s.onload = initMunchkin;
+    document.getElementsByTagName('body')[0].appendChild(s);
+  })();
+</script><script type="text/javascript" async="" src="file://munchkin.marketo.net/munchkin.js"></script>
+<script type="text/javascript">
+  var _sf_async_config={};
+  /** CONFIGURATION START **/
+  _sf_async_config.uid = 40977;
+  _sf_async_config.domain = "docs.xamarin.com"; /** CHANGE THIS **/
+  /** CONFIGURATION END **/
+  (function(){
+    d;;;() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement("script");
+      e.setAttribute("language", "javascript");
+      e.setAttribute("type", "text/javascript");
+      e.setAttribute("src",
+        (("https:" == document.location.protocol) ?
+        "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :
+        "http://static.chartbeat.com/") +
+        "js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != "function") ?
+    loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<script type="text/javascript" src="../../../../cdn.bizible.com/scripts/bizible.js" async=""></script>
+
+
+
+    <script src="../../../theme/assets/js/libraries/jquery.syntax/jquery.syntax.min.js" type="text/javascript"></script>
+
+    
+
+<script type="text/javascript" src="../../../theme/assets/js/pages/developers/api.js"></script>
+    
+
+
+
+
+<!-- Mirrored from developer.xamarin.com/api/member/System.Collections.ArrayList.TrimToSize/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Sep 2016 06:40:49 GMT -->
+
+<script language="javascript" type="text/javascript" src="http://static.chartbeat.com/js/chartbeat.js"></script></body></html>

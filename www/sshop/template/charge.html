@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="row marketing">
+
+    <div class="alert alert-success alert-dismissable">
+        浙江温州，浙江温州，最大Lagoon Shop，Lagoon Shop倒闭了！老板黄鹤吃喝嫖赌，欠下了3.5个亿，带着他的小姨子跑了。我们没有办法，拿着钱包抵工资。原价都是三百多、二百多、一百多的钱包，通通出售！
+    </div>
+    <div class="alert alert-success alert-dismissable">
+        我们欢迎任何形式的Money哦。
+    </div>
+    <div class="commodity-list">
+        <table class="table">
+            <tr>
+                <th>商品序号</th>
+                <th>商品名称</th>
+                <th>商品价格</th>
+            </tr>
+            {% for data in commoditys %}
+            <tr>
+                <td class="commodity-name"><a href="/info/{{ data.id }}">{{ data.id }}</a></td>
+                <td>
+                    {{data.name}}
+                </td>
+                <td>{{ data.price }}</td>
+                <td>
+                </td>
+            </tr>
+            {% end %}
+        </table>
+
+    </div>
+    <div class="pagination col-lg-12">
+        {% if preview-1 >= 0 %}
+        <a href="?page={{ preview }}">上一页</a>
+        {% end %}
+        {% if len(commoditys) < limit or not next %}
+        {% else %}
+        <a href="?page={{ next }}" class="pull-right">下一页</a>
+        {% end %}
+    </div>
+    <label>请输入要出售的商品信息</label>
+    <form class="form-inline" role="form" action="/charge" method="post"/>
+
+    <div class="form-group">
+        <label class="sr-only" for="name">商品序号</label>
+        <input type="text" class="form-control" id="id" name="id" placeholder="请输入商品序号">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="name">支付金额</label>
+        <input type="text" class="form-control" id="name" name="price" placeholder="请输入你的支付金额">
+    </div>
+    {% raw xsrf_form_html() %}
+    <button type="submit" class="btn btn-default">提交</button>
+    </form>
+</div>
+<audio src="static/audio/audio.mp3" autoplay="autoplay"/>
+{% end %}

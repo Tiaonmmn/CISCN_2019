@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="row">
+    <form action="/pass/reset" method="post" class="col-lg-6 col-lg-offset-3">
+        {% raw xsrf_form_html() %}
+        <div class="form-group">
+            <label>邮件地址：</label>
+            <input type="email" class="form-control" name="mail" placeholder="" required>
+        </div>
+        <button class="btn btn-primary pull-right" type="submit">发送重置链接</button>
+    </form>
+</div>
+<br/>
+{% end %}
